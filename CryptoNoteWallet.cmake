@@ -1,4 +1,4 @@
 set(CN_PROJECT_NAME "inbestcoin")
 set(CN_CURRENCY_DISPLAY_NAME "inbestcoin")
-set(CN_CURRENCY_TICKER "ITNS")
+set(CN_CURRENCY_TICKER "INC")
 set(CN_VERSION 1.2.0)
