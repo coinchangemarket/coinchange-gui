@@ -1,4 +1,4 @@
-// Copyright (c) 2017-2018, Intense Coin developers
+// Copyright (c) 2017-2018, inbestcoin developers
 // Copyright (c) 2015-2017, The Bytecoin developers
 //
 // This file is part of Bytecoin.
