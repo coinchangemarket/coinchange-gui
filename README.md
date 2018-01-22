@@ -63,13 +63,23 @@ You may download them from:
 mkdir build && cd build && cmake -DSTATIC=1 .. && make
 ```
 
-#### To create a portable build (AppImage), use linuxdeployqt:
+#### To create a portable build
+
+##### On *nix
+
 ```
 cp src/intensecoinwallet.desktop build/
 cp src/images/intensecoin.png build/
 cd build
 linuxdeployqt.AppImage intensecoinwallet.desktop -appimage -verbose=2 -always-overwrite -no-translations
 ```
+
+##### On Windows
+
+```
+windeployqt.exe Intensecoin.exe
+```
+
 ## Community and support
 
 TBD
