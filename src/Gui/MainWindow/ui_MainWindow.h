@@ -48,7 +48,7 @@ public:
     QAction *m_openWalletAction;
     QAction *m_encryptWalletAction;
     QAction *m_changePasswordAction;
-    QAction *m_aboutIntensecoinAction;
+    QAction *m_aboutinbestcoinAction;
     QAction *m_aboutQtAction;
     QAction *m_backupWalletAction;
     QAction *m_autostartAction;
@@ -141,7 +141,7 @@ public:
         MainWindow->setMinimumSize(QSize(1260, 600));
         MainWindow->setMaximumSize(QSize(16777215, 16777215));
         QIcon icon;
-        icon.addFile(QStringLiteral(":/images/intensecoin"), QSize(), QIcon::Normal, QIcon::Off);
+        icon.addFile(QStringLiteral(":/images/inbestcoin"), QSize(), QIcon::Normal, QIcon::Off);
         MainWindow->setWindowIcon(icon);
         m_exitAction = new QAction(MainWindow);
         m_exitAction->setObjectName(QStringLiteral("m_exitAction"));
@@ -159,9 +159,9 @@ public:
         m_changePasswordAction = new QAction(MainWindow);
         m_changePasswordAction->setObjectName(QStringLiteral("m_changePasswordAction"));
         m_changePasswordAction->setEnabled(true);
-        m_aboutIntensecoinAction = new QAction(MainWindow);
-        m_aboutIntensecoinAction->setObjectName(QStringLiteral("m_aboutIntensecoinAction"));
-        m_aboutIntensecoinAction->setEnabled(true);
+        m_aboutinbestcoinAction = new QAction(MainWindow);
+        m_aboutinbestcoinAction->setObjectName(QStringLiteral("m_aboutinbestcoinAction"));
+        m_aboutinbestcoinAction->setEnabled(true);
         m_aboutQtAction = new QAction(MainWindow);
         m_aboutQtAction->setObjectName(QStringLiteral("m_aboutQtAction"));
         m_aboutQtAction->setEnabled(true);
@@ -585,7 +585,7 @@ public:
         menuSettings->addAction(menuThemes->menuAction());
         menuHelp->addAction(m_communityForumAction);
         menuHelp->addAction(m_reportIssueAction);
-        menuHelp->addAction(m_aboutIntensecoinAction);
+        menuHelp->addAction(m_aboutinbestcoinAction);
         menuHelp->addAction(m_aboutQtAction);
 
         retranslateUi(MainWindow);
@@ -596,7 +596,7 @@ public:
 		QObject::connect(m_removePendingTxAction, SIGNAL(triggered()), MainWindow, SLOT(removePendingTx()));
         QObject::connect(m_aboutQtAction, SIGNAL(triggered()), MainWindow, SLOT(aboutQt()));
         QObject::connect(m_backupWalletAction, SIGNAL(triggered()), MainWindow, SLOT(backupWallet()));
-        QObject::connect(m_aboutIntensecoinAction, SIGNAL(triggered()), MainWindow, SLOT(about()));
+        QObject::connect(m_aboutinbestcoinAction, SIGNAL(triggered()), MainWindow, SLOT(about()));
         QObject::connect(m_overviewButton, SIGNAL(toggled(bool)), m_overviewFrame, SLOT(setVisible(bool)));
         QObject::connect(m_transactionsButton, SIGNAL(toggled(bool)), m_transactionsFrame, SLOT(setVisible(bool)));
         QObject::connect(m_addressBookButton, SIGNAL(toggled(bool)), m_addressBookFrame, SLOT(setVisible(bool)));
@@ -632,7 +632,7 @@ public:
 #ifndef QT_NO_TOOLTIP
         m_changePasswordAction->setToolTip(QApplication::translate("MainWindow", "Change password", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
-        m_aboutIntensecoinAction->setText(QApplication::translate("MainWindow", "About Intensecoin", Q_NULLPTR));
+        m_aboutinbestcoinAction->setText(QApplication::translate("MainWindow", "About inbestcoin", Q_NULLPTR));
         m_aboutQtAction->setText(QApplication::translate("MainWindow", "About Qt", Q_NULLPTR));
         m_backupWalletAction->setText(QApplication::translate("MainWindow", "Backup wallet", Q_NULLPTR));
         m_autostartAction->setText(QApplication::translate("MainWindow", "Start on system login", Q_NULLPTR));
@@ -677,7 +677,7 @@ public:
         m_balanceCopyLabel->setText(QApplication::translate("MainWindow", "Copied!", Q_NULLPTR));
         m_balanceIconLabel->setText(QString());
         m_overviewButton->setText(QApplication::translate("MainWindow", "OVERVIEW", Q_NULLPTR));
-        m_sendButton->setText(QApplication::translate("MainWindow", "SEND INTENSECOINS", Q_NULLPTR));
+        m_sendButton->setText(QApplication::translate("MainWindow", "SEND inbestcoinS", Q_NULLPTR));
         m_transactionsButton->setText(QApplication::translate("MainWindow", "TRANSACTIONS", Q_NULLPTR));
         m_blockExplorerButton->setText(QApplication::translate("MainWindow", "BLOCK EXPLORER", Q_NULLPTR));
         m_addressBookButton->setText(QApplication::translate("MainWindow", "CONTACTS", Q_NULLPTR));

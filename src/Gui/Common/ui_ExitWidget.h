@@ -47,7 +47,7 @@ public:
     void retranslateUi(QWidget *ExitWidget)
     {
         ExitWidget->setWindowTitle(QApplication::translate("ExitWidget", "Saving data", 0));
-        label->setText(QApplication::translate("ExitWidget", "Intensecoin wallet is saving data.\n"
+        label->setText(QApplication::translate("ExitWidget", "inbestcoin wallet is saving data.\n"
 "Please wait...", 0));
     } // retranslateUi
 

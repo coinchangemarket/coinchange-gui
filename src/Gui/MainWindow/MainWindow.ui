@@ -33,7 +33,7 @@
   </property>
   <property name="windowIcon">
    <iconset>
-    <normaloff>:/images/intensecoin</normaloff>:/images/intensecoin</iconset>
+    <normaloff>:/images/inbestcoin</normaloff>:/images/inbestcoin</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -620,7 +620,7 @@
             <enum>Qt::NoFocus</enum>
            </property>
            <property name="text">
-            <string>SEND INTENSECOINS</string>
+            <string>SEND inbestcoinS</string>
            </property>
            <property name="checkable">
             <bool>true</bool>
@@ -859,7 +859,7 @@
     </property>
     <addaction name="m_communityForumAction"/>
     <addaction name="m_reportIssueAction"/>
-    <addaction name="m_aboutIntensecoinAction"/>
+    <addaction name="m_aboutinbestcoinAction"/>
     <addaction name="m_aboutQtAction"/>
    </widget>
    <addaction name="menuFile"/>
@@ -916,12 +916,12 @@
     <string>Change password</string>
    </property>
   </action>
-  <action name="m_aboutIntensecoinAction">
+  <action name="m_aboutinbestcoinAction">
    <property name="enabled">
     <bool>true</bool>
    </property>
    <property name="text">
-    <string>About Intensecoin</string>
+    <string>About inbestcoin</string>
    </property>
   </action>
   <action name="m_aboutQtAction">
@@ -1197,7 +1197,7 @@
    </hints>
   </connection>
   <connection>
-   <sender>m_aboutIntensecoinAction</sender>
+   <sender>m_aboutinbestcoinAction</sender>
    <signal>triggered()</signal>
    <receiver>MainWindow</receiver>
    <slot>about()</slot>

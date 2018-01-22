@@ -2,18 +2,18 @@
 //
 // This file is part of Bytecoin.
 //
-// Intensecoin is free software: you can redistribute it and/or modify
+// inbestcoin is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Lesser General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
 // (at your option) any later version.
 //
-// Intensecoin is distributed in the hope that it will be useful,
+// inbestcoin is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with Intensecoin.  If not, see <http://www.gnu.org/licenses/>.
+// along with inbestcoin.  If not, see <http://www.gnu.org/licenses/>.
 
 #include <QApplication>
 #include <QPainter>
@@ -104,7 +104,7 @@ void SendGlassFrame::drawProgressLabel(QPainter &_painter) {
   QFont font;
   font.setBold(true);
   font.setPixelSize(14);
-  QString msg = tr("You will be able to send Intensecoins\nwhen the wallet is synchronized");
+  QString msg = tr("You will be able to send inbestcoins\nwhen the wallet is synchronized");
   QFontMetrics fm(font);
   QRect messageRect = fm.boundingRect(QRect(), Qt::AlignCenter, msg);
   messageRect.moveCenter(QPoint(m_pixmapBuffer.width() / 2, 163));

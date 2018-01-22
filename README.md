@@ -68,16 +68,16 @@ mkdir build && cd build && cmake -DSTATIC=1 .. && make
 ##### On *nix
 
 ```
-cp src/intensecoinwallet.desktop build/
-cp src/images/intensecoin.png build/
+cp src/inbestcoinwallet.desktop build/
+cp src/images/inbestcoin.png build/
 cd build
-linuxdeployqt.AppImage intensecoinwallet.desktop -appimage -verbose=2 -always-overwrite -no-translations
+linuxdeployqt.AppImage inbestcoinwallet.desktop -appimage -verbose=2 -always-overwrite -no-translations
 ```
 
 ##### On Windows
 
 ```
-windeployqt.exe Intensecoin.exe
+windeployqt.exe inbestcoin.exe
 ```
 
 ## Community and support
