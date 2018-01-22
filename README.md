@@ -9,14 +9,14 @@ You can read more about it at https://coin.inbest.cloud
 ### 1. Clone wallet sources
 
 ```
-git clone git@github.com:inbestcoin/inbestcoin.git
+git clone git@github.com:inbestcoin/inbestcoin-gui.git
 ```
 
 ### 2. Update git submodules
 
 ```
 git submodule update --init --recursive
-git submodule foreach git pull origin master
+git submodule foreach git pull origin gui
 ```
 
 ### 3. Build
@@ -46,7 +46,7 @@ If you are building on an older processor without AVX support, add the following
 
 And then build from within MSVC. You may find it helpful to explicitly include Boostand QT paths:
 ```
-cmake -G "Visual Studio 14 Win64" -DCMAKE_PREFIX_PATH="C:\Qt2\5.9.1\msvc2015" -DBOOST_ROOT="C:\boost_1_64_0_built" -DBOOST_INCLUDEDIR="C:/boost_1_64_0_built/lib32-msvc-14.1" -DBOOST_LIBRARYDIR="C:\boost_1_64_0_built\libs"
+cmake.exe -DBOOST_ROOT=C:\boost_1_59_0 -DBOOST_LIBRARYDIR=C:\boost_1_59_0\libs\ -DCMAKE_PREFIX_PATH=D:\Qt\5.10.0\msvc2015_64 -G "Visual Studio 14 Win64" ..
 ```
 
 #### On *nix
