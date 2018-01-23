@@ -60,7 +60,7 @@ namespace WalletGui {
 namespace {
 
 const int MAX_RECENT_WALLET_COUNT = 10;
-const char COMMUNITY_FORUM_URL[] = "https://intense-coin.herokuapp.com";
+const char COMMUNITY_FORUM_URL[] = "https://t.me/inbestcoin";
 const char REPORT_ISSUE_URL[] = "https://coin.inbest.cloud/#contact";
 
 const char DONATION_URL_DONATION_TAG[] = "donation";
