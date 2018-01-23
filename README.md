@@ -4,6 +4,10 @@ inbestcoin is a cryptocurrency focused on providing a decentralized mechanism of
 
 You can read more about it at https://coin.inbest.cloud
 
+## About inbestcoin-gui
+
+This in a multi platform GUI wallet for inbestcoin.
+
 ## Building inbestcoin-gui
 
 ### 1. Clone wallet sources
@@ -82,8 +86,14 @@ windeployqt.exe inbestcoin.exe
 
 ## Community and support
 
-TBD
+You can find us at:
+
+[Telegram](https://t.me/inbestcoin)
 
 ## License
 
-inbestcoin is licensed under the GNU Lesser General Public License v3.0
+inbestcoin-gui is licensed under the GNU Lesser General Public License v3.0
+
+## Credits
+
+Partially based on https://github.com/valiant1x/intensecoinwallet/ and https://github.com/cryptonotefoundation/cryptonotewallet
