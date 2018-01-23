@@ -48,12 +48,14 @@ If you are building on an older processor without AVX support, add the following
 -DPORTABLE=1 -DWITH_AVX2=0
 ```
 
-And then build from within MSVC. You may find it helpful to explicitly include Boostand QT paths:
+You may find it helpful to explicitly include Boostand QT paths:
 ```
 cmake.exe -DPORTABLE=1 -Wno-dev -DBOOST_ROOT=C:\boost_1_59_0 -DBOOST_LIBRARYDIR=C:\boost_1_59_0\libs\ -DCMAKE_PREFIX_PATH=D:\Qt\5.10.0\msvc2015_64 -G "Visual Studio 15 Win64" ..
 ```
 
-#### On *nix
+And then build from within MSVC.
+
+#### On * nix / OS X
 
 Dependencies: CMake 2.8.6 or later, Boost 1.59 or later and QT 5.1 or later.
 
@@ -67,15 +69,26 @@ You may download them from:
 mkdir build && cd build && cmake -DSTATIC=1 .. && make
 ```
 
+You may find it helpful to explicitly include Boost and QT paths
+```
+cmake -DSTATIC=1 -DBOOST_ROOT=/boost_1_59_0 -DBOOST_LIBRARYDIR=/boost_1_59_0/libs/ -DCMAKE_PREFIX_PATH=/qt/5.10 ..
+```
+
 #### To create a portable build
 
-##### On *nix
+##### On * nix
 
 ```
 cp src/inbestcoinwallet.desktop build/
 cp src/images/inbestcoin.png build/
 cd build
 linuxdeployqt.AppImage inbestcoinwallet.desktop -appimage -verbose=2 -always-overwrite -no-translations
+```
+
+##### On OS X
+
+```
+./macdeployqt inbestcoin.app -dmg
 ```
 
 ##### On Windows
