@@ -25,7 +25,7 @@ namespace WalletGui {
 
 namespace {
 
-const quint32 SYNC_DISTANCE = 5;
+const quint32 SYNC_DISTANCE = 0;
 
 }
 

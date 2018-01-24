@@ -68,7 +68,7 @@ const char SEND_FRAME_STYLE_SHEET[] =
     "border-bottom: 1px solid %borderColor%;"
   "}";
 
-const quint64 MAXIMUM_UNSYNCED_BLOCKS_WHEN_SEND_AVAILABLE = 5;
+const quint64 MAXIMUM_UNSYNCED_BLOCKS_WHEN_SEND_AVAILABLE = 10;
 const quint64 DEFAULT_MIXIN_VALUE = 6;
 const quint64 MAX_MIXIN_VALUE = 1000;
 const quint64 CRITICAL_MIXIN_BOUND = 3;
@@ -202,8 +202,8 @@ void SendFrame::passwordChanged() {
 
 void SendFrame::synchronizationProgressUpdated(quint32 _current, quint32 _total) {
   if (_total - _current > MAXIMUM_UNSYNCED_BLOCKS_WHEN_SEND_AVAILABLE) {
-    m_glassFrame->install(this);
-    m_glassFrame->updateSynchronizationState(_current, _total);
+    // m_glassFrame->install(this);
+    // m_glassFrame->updateSynchronizationState(_current, _total);
   }
 }
 
