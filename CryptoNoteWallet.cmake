@@ -1,4 +1,4 @@
-set(CN_PROJECT_NAME "inbestcoin")
-set(CN_CURRENCY_DISPLAY_NAME "inbestcoin")
-set(CN_CURRENCY_TICKER "INC")
-set(CN_VERSION 1.2.0)
+set(CN_PROJECT_NAME "coinchange")
+set(CN_CURRENCY_DISPLAY_NAME "CoinChange")
+set(CN_CURRENCY_TICKER "CCP")
+set(CN_VERSION 1.0.0)
